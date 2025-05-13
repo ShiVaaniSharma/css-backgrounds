@@ -1,0 +1,225 @@
+.blog-section {
+    padding: 4rem 2rem; 
+    margin-bottom: 2rem; 
+    color: #f0f0f0; 
+    position: relative; 
+    overflow: hidden; 
+    background-color: #1a1a2e; 
+  }
+  
+  /* Ensure headings have good contrast too */
+  .blog-section h2 {
+     margin-bottom: 1.5rem;
+     color: inherit; 
+     position: relative; 
+     z-index: 1;
+  }
+  
+  .blog-section p {
+     position: relative; 
+     z-index: 1;
+     line-height: 1.7;
+     max-width: 800px; 
+  }
+
+
+  .blog-section {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    /* Default text color for bright themes - adjust per theme if needed */
+    color: #333;
+    background-color: #f8f9fa; /* Fallback light color */
+  }
+  
+  .blog-section h2 {
+     margin-bottom: 1.5rem;
+     color: inherit;
+     position: relative;
+     z-index: 1;
+  }
+  
+  .blog-section p {
+     position: relative;
+     z-index: 1;
+     line-height: 1.7;
+     max-width: 800px;
+  }
+
+
+  /* background theme /////////////////////////////////////  */
+
+
+  .sci-theme-1 {
+    --sci1-bg: #0f2027;
+    --sci1-hex-color: rgba(46, 134, 178, 0.1); 
+    --sci1-hex-size: 60px;
+    --sci1-text-color: #e0f7fa;
+  
+    background-color: var(--sci1-bg);
+    color: var(--sci1-text-color);
+    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='86.6' viewBox='0 0 100 86.6'%3E%3Cpolygon points='50,0 100,25 100,75 50,100 0,75 0,25' fill='none' stroke='%232e86b2' stroke-width='1' stroke-opacity='0.1'/%3E%3C/svg%3E");
+    background-size: var(--sci1-hex-size);
+    
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='86.6' viewBox='0 0 100 86.6'%3E%3Cpolygon points='50,0 100,25 100,75 50,100 0,75 0,25' fill='none' stroke='rgba(46, 134, 178, 0.1)' stroke-width='1'/%3E%3C/svg%3E"),
+      radial-gradient(circle at center, rgba(25, 48, 61, 0.5) 0%, var(--sci1-bg) 70%);
+    background-size: var(--sci1-hex-size), 100% 100%;
+    background-position: center, center;
+  }
+  
+ 
+  /* .sci-theme-1 { --sci1-hex-color: rgba(255, 255, 255, 0.05); } */
+
+
+
+  /* design 2 ===================================== */
+
+  .sci-theme-2 {
+    --sci2-bg: #010101;
+    --sci2-line-color: rgba(0, 255, 70, 0.1); 
+    --sci2-glow-color: rgba(0, 255, 70, 0.15);
+    --sci2-grid-size: 40px;
+    --sci2-text-color: #00ff46; 
+  
+    background-color: var(--sci2-bg);
+    color: var(--sci2-text-color);
+    background-image:
+      
+      radial-gradient(ellipse at center, var(--sci2-glow-color) 0%, transparent 60%),
+      
+      repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent calc(var(--sci2-grid-size) - 1px),
+        var(--sci2-line-color) calc(var(--sci2-grid-size) - 1px),
+        var(--sci2-line-color) var(--sci2-grid-size)
+      ),
+      
+      repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent calc(var(--sci2-grid-size) - 1px),
+        var(--sci2-line-color) calc(var(--sci2-grid-size) - 1px),
+        var(--sci2-line-color) var(--sci2-grid-size)
+      );
+     background-size: 100% 100%, var(--sci2-grid-size) var(--sci2-grid-size), var(--sci2-grid-size) var(--sci2-grid-size);
+     background-position: center center;
+  }
+  
+  .sci-theme-2 h2 {
+      color: #adffc4; 
+  }
+
+
+
+
+  /* style 3 /////////////////////////////  */
+
+
+
+  .sci-theme-3 {
+    --sci3-bg: #0b0f19;
+    --sci3-nebula1: rgba(80, 35, 150, 0.4); /* Purple */
+    --sci3-nebula2: rgba(35, 80, 150, 0.3); /* Blue */
+    --sci3-star-color: rgba(255, 255, 255, 0.7);
+    --sci3-text-color: #e1e1ff;
+  
+    background-color: var(--sci3-bg);
+    color: var(--sci3-text-color);
+    background-image:
+      /* Tiny stars */
+      repeating-radial-gradient(circle at center, var(--sci3-star-color) 0, var(--sci3-star-color) 1px, transparent 1px, transparent 50px),
+      /* Nebula Cloud 1 */
+      radial-gradient(ellipse at 20% 30%, var(--sci3-nebula1) 0%, transparent 70%),
+      /* Nebula Cloud 2 */
+      radial-gradient(ellipse at 80% 70%, var(--sci3-nebula2) 0%, transparent 60%),
+      /* Base darkness gradient */
+      radial-gradient(circle at center, rgba(20, 25, 40, 0.5) 0%, var(--sci3-bg) 80%);
+    background-size: 50px 50px, 80% 80%, 70% 70%, 100% 100%; /* Star size, cloud sizes, base */
+    background-position: 10px 10px, -20% -10%, 40% 30%, center center; /* Offset stars and clouds */
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+  }
+
+  /* style 4 777777777777777777777777777 */
+
+
+  .sci-theme-4 {
+    --sci4-bg: #e8f5e9; /* Light green background */
+    --sci4-cell1: rgba(76, 175, 80, 0.2);  /* Greenish cell */
+    --sci4-cell2: rgba(255, 235, 59, 0.15); /* Yellowish cell */
+    --sci4-cell3: rgba(3, 169, 244, 0.1);   /* Bluish detail */
+    --sci4-text-color: #1b5e20; /* Dark green text for contrast */
+  
+    background-color: var(--sci4-bg);
+    color: var(--sci4-text-color);
+    background-image:
+        radial-gradient(circle at 15% 25%, var(--sci4-cell1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 40%, var(--sci4-cell2) 0%, transparent 35%),
+        radial-gradient(circle at 50% 75%, var(--sci4-cell3) 0%, transparent 30%),
+        radial-gradient(circle at 90% 95%, var(--sci4-cell1) 0%, transparent 25%),
+        radial-gradient(circle at 30% 80%, var(--sci4-cell2) 0%, transparent 50%);
+    background-size: 60% 60%, 50% 50%, 40% 40%, 35% 35%, 70% 70%; /* Varying sizes */
+    background-position: 0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%; /* Spread them out */
+    background-repeat: no-repeat;
+  }
+
+
+
+  /* style 6 ---------------------------------------------------------  */
+  .sci-theme-6 {
+    --sci6-bg: #e3f2fd; /* Very light blue */
+    --sci6-grid-major: rgba(66, 165, 245, 0.3); /* Lighter blue lines */
+    --sci6-grid-minor: rgba(66, 165, 245, 0.1); /* Fainter blue lines */
+    --sci6-major-size: 100px;
+    --sci6-minor-div: 5; /* Minor lines per major grid */
+    --sci6-minor-size: calc(var(--sci6-major-size) / var(--sci6-minor-div));
+    --sci6-text-color: #0d47a1; /* Dark blue text */  
+    background-color: var(--sci6-bg);
+    color: var(--sci6-text-color);
+    background-image:
+      /* Major vertical lines */
+      repeating-linear-gradient(
+        to right,
+        var(--sci6-grid-major),
+        var(--sci6-grid-major) 1px,
+        transparent 1px,
+        transparent var(--sci6-major-size)
+      ),
+      /* Major horizontal lines */
+      repeating-linear-gradient(
+        to bottom,
+        var(--sci6-grid-major),
+        var(--sci6-grid-major) 1px,
+        transparent 1px,
+        transparent var(--sci6-major-size)
+      ),
+      /* Minor vertical lines */
+       repeating-linear-gradient(
+        to right,
+        var(--sci6-grid-minor),
+        var(--sci6-grid-minor) 1px,
+        transparent 1px,
+        transparent var(--sci6-minor-size)
+      ),
+       /* Minor horizontal lines */
+      repeating-linear-gradient(
+        to bottom,
+        var(--sci6-grid-minor),
+        var(--sci6-grid-minor) 1px,
+        transparent 1px,
+        transparent var(--sci6-minor-size)
+      );
+  
+    background-size:
+      var(--sci6-major-size) var(--sci6-major-size), 
+      var(--sci6-major-size) var(--sci6-major-size), 
+      var(--sci6-minor-size) var(--sci6-minor-size), 
+      var(--sci6-minor-size) var(--sci6-minor-size); 
+  
+    background-position: -1px -1px; /* Offset slightly to align */
+  }
+
+
