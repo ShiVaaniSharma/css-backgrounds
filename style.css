@@ -174,13 +174,13 @@
     --sci6-grid-major: rgba(66, 165, 245, 0.3); /* Lighter blue lines */
     --sci6-grid-minor: rgba(66, 165, 245, 0.1); /* Fainter blue lines */
     --sci6-major-size: 100px;
-    --sci6-minor-div: 5; /* Minor lines per major grid */
+    --sci6-minor-div: 5; 
     --sci6-minor-size: calc(var(--sci6-major-size) / var(--sci6-minor-div));
-    --sci6-text-color: #0d47a1; /* Dark blue text */  
+    --sci6-text-color: #0d47a1; 
     background-color: var(--sci6-bg);
     color: var(--sci6-text-color);
     background-image:
-      /* Major vertical lines */
+    
       repeating-linear-gradient(
         to right,
         var(--sci6-grid-major),
@@ -188,7 +188,7 @@
         transparent 1px,
         transparent var(--sci6-major-size)
       ),
-      /* Major horizontal lines */
+     
       repeating-linear-gradient(
         to bottom,
         var(--sci6-grid-major),
@@ -196,7 +196,7 @@
         transparent 1px,
         transparent var(--sci6-major-size)
       ),
-      /* Minor vertical lines */
+      
        repeating-linear-gradient(
         to right,
         var(--sci6-grid-minor),
@@ -204,7 +204,7 @@
         transparent 1px,
         transparent var(--sci6-minor-size)
       ),
-       /* Minor horizontal lines */
+      
       repeating-linear-gradient(
         to bottom,
         var(--sci6-grid-minor),
@@ -219,7 +219,7 @@
       var(--sci6-minor-size) var(--sci6-minor-size), 
       var(--sci6-minor-size) var(--sci6-minor-size); 
   
-    background-position: -1px -1px; /* Offset slightly to align */
+    background-position: -1px -1px; 
   }
 
 
