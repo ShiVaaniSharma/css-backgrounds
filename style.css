@@ -138,8 +138,8 @@
       radial-gradient(ellipse at 80% 70%, var(--sci3-nebula2) 0%, transparent 60%),
       /* Base darkness gradient */
       radial-gradient(circle at center, rgba(20, 25, 40, 0.5) 0%, var(--sci3-bg) 80%);
-    background-size: 50px 50px, 80% 80%, 70% 70%, 100% 100%; /* Star size, cloud sizes, base */
-    background-position: 10px 10px, -20% -10%, 40% 30%, center center; /* Offset stars and clouds */
+    background-size: 50px 50px, 80% 80%, 70% 70%, 100% 100%; 
+    background-position: 10px 10px, -20% -10%, 40% 30%, center center; 
     background-repeat: repeat, no-repeat, no-repeat, no-repeat;
   }
 
@@ -147,11 +147,11 @@
 
 
   .sci-theme-4 {
-    --sci4-bg: #e8f5e9; /* Light green background */
-    --sci4-cell1: rgba(76, 175, 80, 0.2);  /* Greenish cell */
-    --sci4-cell2: rgba(255, 235, 59, 0.15); /* Yellowish cell */
-    --sci4-cell3: rgba(3, 169, 244, 0.1);   /* Bluish detail */
-    --sci4-text-color: #1b5e20; /* Dark green text for contrast */
+    --sci4-bg: #e8f5e9; 
+    --sci4-cell1: rgba(76, 175, 80, 0.2);  
+    --sci4-cell2: rgba(255, 235, 59, 0.15); 
+    --sci4-cell3: rgba(3, 169, 244, 0.1);   
+    --sci4-text-color: #1b5e20; 
   
     background-color: var(--sci4-bg);
     color: var(--sci4-text-color);
@@ -170,9 +170,9 @@
 
   /* style 6 ---------------------------------------------------------  */
   .sci-theme-6 {
-    --sci6-bg: #e3f2fd; /* Very light blue */
-    --sci6-grid-major: rgba(66, 165, 245, 0.3); /* Lighter blue lines */
-    --sci6-grid-minor: rgba(66, 165, 245, 0.1); /* Fainter blue lines */
+    --sci6-bg: #e3f2fd; 
+    --sci6-grid-major: rgba(66, 165, 245, 0.3); 
+    --sci6-grid-minor: rgba(66, 165, 245, 0.1); 
     --sci6-major-size: 100px;
     --sci6-minor-div: 5; 
     --sci6-minor-size: calc(var(--sci6-major-size) / var(--sci6-minor-div));
